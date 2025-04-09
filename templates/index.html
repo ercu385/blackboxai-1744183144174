@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Tarım Uygulaması</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen">
+        <!-- Navbar -->
+        <nav class="bg-green-600 text-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-tractor text-2xl"></i>
+                    <span class="text-xl font-bold">Dijital Tarım</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-green-200">Anasayfa</a>
+                    <a href="#" class="hover:text-green-200">Çiftçiler</a>
+                    <a href="#" class="hover:text-green-200">Tarlalar</a>
+                    <a href="#" class="hover:text-green-200">Ürünler</a>
+                </div>
+                <button class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-8">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h1 class="text-2xl font-bold text-green-700 mb-4">Hoş Geldiniz</h1>
+                <p class="text-gray-600 mb-6">Dijital tarım yönetim sistemine erişiminiz var. Aşağıdaki panellerden işlemlerinizi gerçekleştirebilirsiniz.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Çiftçi Paneli -->
+                    <div class="bg-green-50 rounded-lg p-4 border border-green-200 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-user text-green-600 text-2xl mr-3"></i>
+                            <h2 class="text-lg font-semibold text-green-800">Çiftçiler</h2>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Çiftçi kayıt ve yönetim işlemleri</p>
+                        <a href="#" class="text-green-600 text-sm font-medium hover:underline">Yönetim Paneli →</a>
+                    </div>
+
+                    <!-- Tarla Paneli -->
+                    <div class="bg-blue-50 rounded-lg p-4 border border-blue-200 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-map-marked-alt text-blue-600 text-2xl mr-3"></i>
+                            <h2 class="text-lg font-semibold text-blue-800">Tarlalar</h2>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Tarla bilgileri ve konum yönetimi</p>
+                        <a href="#" class="text-blue-600 text-sm font-medium hover:underline">Yönetim Paneli →</a>
+                    </div>
+
+                    <!-- Ürün Paneli -->
+                    <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-200 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-seedling text-yellow-600 text-2xl mr-3"></i>
+                            <h2 class="text-lg font-semibold text-yellow-800">Ürünler</h2>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Ürün takip ve hasat yönetimi</p>
+                        <a href="#" class="text-yellow-600 text-sm font-medium hover:underline">Yönetim Paneli →</a>
+                    </div>
+
+                    <!-- Sulama Paneli -->
+                    <div class="bg-purple-50 rounded-lg p-4 border border-purple-200 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-tint text-purple-600 text-2xl mr-3"></i>
+                            <h2 class="text-lg font-semibold text-purple-800">Sulama</h2>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">Sulama planlama ve takip</p>
+                        <a href="#" class="text-purple-600 text-sm font-medium hover:underline">Yönetim Paneli →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grafik Alanı -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Aktivite Grafiği</h2>
+                <div class="h-64 bg-gray-100 rounded flex items-center justify-center">
+                    <p class="text-gray-500">Grafik verileri burada gösterilecek</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // API bağlantıları burada yapılacak
+        console.log("Uygulama başlatıldı");
+    </script>
+</body>
+</html>
